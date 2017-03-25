@@ -1,0 +1,13 @@
+<div class="container">
+<div class="panel panel-primary">
+<div class="panel-body">
+<%= simple_form_for @company do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :image, as: :file %> 
+  <%= f.input :name, placeholder: 'Enter name' %>
+  <%= f.input :description, placeholder: 'Enter description' %>
+  <%= f.button :submit %>
+<% end %>
+</div>
+</div>
+</div>

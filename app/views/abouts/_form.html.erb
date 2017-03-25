@@ -1,0 +1,15 @@
+<%= simple_form_for(@about) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :address %>
+    <%= f.input :phone %>
+    <%= f.input :link_one %>
+    <%= f.input :link_two %>
+    <%= f.association :company %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
