@@ -54,7 +54,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <img class="first-slide" src="https://images.pexels.com/photos/110204/pexels-photo-110204.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Simpel Wedding.</h1>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <img class="second-slide" src="https://static.pexels.com/photos/128922/pexels-photo-128922.jpeg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Royal Wedding.</h1>
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <img class="third-slide" src="https://images.pexels.com/photos/132759/pexels-photo-132759.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Traditional Wedding.</h1>
@@ -119,18 +119,20 @@
       <div class="row" align="center">
       	<% @galeries.each do |g| %>
         <div class="col-sm-3">
-          <%= image_tag g.image.url(:medium), class: "img-circle", alt: "Generic placeholder" %>
+          <%= image_tag g.image.url(:medium), class: "img-circle", alt: "Generic placeholder", size: "175x225" %>
         </div><!-- /.col-lg-4 -->
       	<% end %>
       </div><!-- /.row -->
 
       <!-- /END THE FEATURETTES -->
       <hr class="featurette-divider">
+      <h1> <%= @company.name %> </h1>
+      <p><i><%= @company.description %></i></p>
       <ul class="footer">
-      	<li> <span class="glyphicon glyphicon-home"></span> <%= @about.address %> </li>
-      	<li> <span class="glyphicon glyphicon-phone-alt"></span> <%= @about.phone %> </li>
-      	<li> <span class="glyphicon glyphicon-road"></span> <%= @about.link_one %> </li>
-      	<li> <span class="glyphicon glyphicon-phone-alt"></span> <%= @about.link_two %> </li>
+      	<li> <h3><span class="glyphicon glyphicon-home"></span> <%= @about.address %> </h3></li>
+      	<li> <h3><span class="glyphicon glyphicon-phone-alt"></span> <%= @about.phone %>  </h3></li>
+      	<li> <h3><span class="glyphicon glyphicon-road"></span> <%= @about.link_one %> </h3></li>
+      	<li> <h3><span class="glyphicon glyphicon-phone-alt"></span> <%= @about.link_two %> </h3></li>
       </ul>  
       <hr class="featurette-divider">
 
