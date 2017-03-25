@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170323233727) do
+ActiveRecord::Schema.define(version: 20170325062121) do
 
   create_table "abouts", force: :cascade do |t|
     t.string   "address"
@@ -30,8 +30,12 @@ ActiveRecord::Schema.define(version: 20170323233727) do
     t.string   "title"
     t.text     "description"
     t.integer  "company_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "activities", ["company_id"], name: "index_activities_on_company_id"
@@ -48,8 +52,12 @@ ActiveRecord::Schema.define(version: 20170323233727) do
     t.string   "image"
     t.text     "description"
     t.integer  "company_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "galeries", ["company_id"], name: "index_galeries_on_company_id"

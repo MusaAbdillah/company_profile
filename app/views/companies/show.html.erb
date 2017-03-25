@@ -108,7 +108,7 @@
           <p class="lead"><%= a.description %></p>
         </div>
         <div class="col-md-5">
-          <%= image_tag a.image %>
+          <%= image_tag a.image.url(:medium) %>
         </div>
       </div>
 
@@ -119,7 +119,7 @@
       <div class="row" align="center">
       	<% @galeries.each do |g| %>
         <div class="col-sm-3">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <%= image_tag g.image.url(:medium), class: "img-circle", alt: "Generic placeholder" %>
         </div><!-- /.col-lg-4 -->
       	<% end %>
       </div><!-- /.row -->
