@@ -38,6 +38,11 @@ gem "rails-erd"
 gem "paperclip", "~> 5.0.0"
 gem 'devise'
 
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
