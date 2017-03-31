@@ -34,7 +34,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form', '>= 3.1.0.rc1'
 gem 'rails_admin', '~> 1.1.1'
 gem "rails-erd"
-gem "paperclip", "~> 5.0.0"
+gem 'mini_magick', '3.8.0'
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+gem 'cloudinary'
 gem 'devise'
 
 group :development do
