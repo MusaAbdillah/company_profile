@@ -1,18 +1,19 @@
+---
 development:
-  cloud_name: ab-technology
-  api_key: '694959295419173'
-  api_secret: OP1IMfa0f3QW2dySmjhlWzXFws4
+  cloud_name: dvrunmtqp
+  api_key: '335617397765561'
+  api_secret: VAHGq6ATO0PgIxW1vbpMW2jgEI4
   enhance_image_tag: true
   static_image_support: false
 production:
-  cloud_name: ab-technology
-  api_key: '694959295419173'
-  api_secret: OP1IMfa0f3QW2dySmjhlWzXFws4
+  cloud_name: dvrunmtqp
+  api_key: '335617397765561'
+  api_secret: VAHGq6ATO0PgIxW1vbpMW2jgEI4
   enhance_image_tag: true
   static_image_support: true
 test:
-  cloud_name: ab-technology
-  api_key: '694959295419173'
-  api_secret: OP1IMfa0f3QW2dySmjhlWzXFws4
+  cloud_name: dvrunmtqp
+  api_key: '335617397765561'
+  api_secret: VAHGq6ATO0PgIxW1vbpMW2jgEI4
   enhance_image_tag: true
   static_image_support: false

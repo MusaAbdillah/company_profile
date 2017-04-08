@@ -35,7 +35,7 @@ gem 'simple_form', '>= 3.1.0.rc1'
 gem 'rails_admin', '~> 1.1.1'
 gem "rails-erd"
 gem 'mini_magick', '3.8.0'
-gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
+gem 'carrierwave'
 gem 'cloudinary'
 gem 'devise'
 

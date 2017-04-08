@@ -229,7 +229,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   byebug
-  carrierwave (>= 1.0.0.beta, < 2.0)
+  carrierwave
   cloudinary
   coffee-rails (~> 4.1.0)
   devise
