@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root "companies#show"
   resources :companies, only: [:show]
-  resources :activities
-  resources :galeries
-  resources :abouts
+  resources :activities, only: [:show]
+  resources :galeries, only: [:show]
+  resources :abouts, only: [:show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
